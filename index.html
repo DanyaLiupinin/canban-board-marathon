@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>marathon2</title>
+</head>
+
+<body>
+    <div>
+
+        <div class="row">
+            <div class="col-header start">
+                <p class="col-header__title">To do</p>
+                <div class="placeholder placeholder__start">
+                    <div class="item item__draggable" draggable="true" id='1'>Drag me</div>
+                </div>
+                <button type="button" class="add-button">Add note</button>
+            </div>
+            <div class="col-header progress">
+                <p class="col-header__title">In process</p>
+                <div class="placeholder">
+
+                </div>
+            </div>
+            <div class="col-header done">
+                <p class="col-header__title">Done</p>
+                <div class="placeholder">
+
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="popup">
+            <p class="popup__input-name">What should you do?</p>
+            <form class="popup__form">
+                <input class="popup__input" type="text" />
+            </form>
+            <p class="popup__capture">push enter to submit</p>
+        </div>
+
+        <div class="popup__wrapper"></div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
